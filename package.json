@@ -4,16 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch",
-    "serv": "static build"
+	"start": "webpack-dev-server --env development",
+	"build": "webpack --env production",
+	"serv": "static build"
   },
-  "author": "",
+  "author": "web669 <web669@yandex.ru>",
   "license": "ISC",
   "devDependencies": {
-    "html-webpack-plugin": "^2.28.0",
-    "node-static": "^0.7.9",
-    "pug": "^2.0.0-beta11",
-    "pug-loader": "^2.3.0",
-    "webpack": "^2.2.1"
+	"css-loader": "^0.26.1",
+	"file-loader": "^0.10.0",
+	"html-webpack-plugin": "^2.28.0",
+	"node-sass": "^4.5.0",
+	"node-static": "^0.7.9",
+	"pug": "^2.0.0-beta11",
+	"pug-loader": "^2.3.0",
+	"sass-loader": "^5.0.1",
+	"style-loader": "^0.13.1",
+	"webpack": "^2.2.1",
+	"webpack-dev-server": "^2.3.0",
+	"webpack-merge": "^2.6.1",
+	"extract-text-webpack-plugin": "^2.0.0-beta",
+	"webpack-spritesmith": "^0.3.1"
+  },
+  "repository": {},
+  "dependencies": {
+	"jquery": "^3.1.1",
+	"normalize.css": "^5.0.0"
   }
 }
