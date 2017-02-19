@@ -4,15 +4,15 @@ module.exports = function (pathSource, pathBuild) {
 	return {
 		module: {
 			rules: [{
-				test: /\.styl$/,
+				test: /\.scss/,
 				include: pathBuild + '/sprite',
 				loaders: [
 					'style',
 					'css',
-					'stylus'
+					'sass'
 				]
 			}, {
-				test: /\.(png|jpg)$/,
+				test: /\.(png|jpg|svg)$/,
 				include: pathSource,
 				loader: 'file-loader',
 				options: {
@@ -28,7 +28,7 @@ module.exports = function (pathSource, pathBuild) {
 				},
 				target: {
 					image: pathBuild + '/sprite/sprite.png',
-					css: pathBuild + '/sprite/sprite.styl'
+					css: pathBuild + '/sprite/sprite.scss'
 				},
 				apiOptions: {
 					cssImageRef: '~sprite.png'

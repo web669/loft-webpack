@@ -1,3 +1,11 @@
-h1 {
-  color: grey;
-}
+@import "../../components/top/top";
+@import "../../components/mixins";
+@import "../../components/user/user";
+@import "../../components/about/about";
+@import "../../components/section/section";
+@import "../../components/title/title";
+@import "../../components/paragraph/paragraph";
+@import "../../components/skills-group/skills-group";
+@import "../../components/skill/skill";
+@import "../../components/map/map";
+@import "../../components/contacts/contacts";

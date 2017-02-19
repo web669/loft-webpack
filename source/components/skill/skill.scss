@@ -1,0 +1,31 @@
+.skill {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 20px 20px;
+  &__circle {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	fill: none;
+	stroke-width: 18;
+	&-under {
+	  stroke: #dfdcd5;
+	  cx: 50;
+	  cy: 50;
+	  r:40;
+	}
+	&-above {
+	  cx: 50;
+	  cy: 50;
+	  r:40;
+	  stroke: #059115;
+	  transform:rotate(-90deg) translate(-100px);
+	  stroke-dasharray: 250;
+	}
+  }
+  &__text {
+	text-anchor: middle;
+	stroke-width: 1px;
+	stroke: #059115;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../components/mixins";
+.top {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+
+  &__bg {
+	width: 100%;
+	@include centered(x);
+	&-image {
+	  @include centered();
+	}
+  }
+
+  &__container {
+	@include centered(y);
+	width: 100%;
+  }
+
+  &__title-image {
+	@include centered();
+  }
+}

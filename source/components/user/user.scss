@@ -1,0 +1,26 @@
+@import "../../components/mixins";
+
+.user {
+  @include centered();
+  width: 320px;
+  text-align: center;
+  color: #ffffff;
+  &__image {
+	border: 1px solid #000000;
+	width: 128px;
+	height: 128px;
+	border-radius: 50% 50%;
+	margin: 0 auto 20px;
+	overflow: hidden;
+  }
+  &__name {
+	font-family: "SansSerif", sans-serif;
+	font-size: 35px;
+	margin: 0 auto 5px;
+  }
+  &__title {
+	font-family: "SansSerif", sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+  }
+}
