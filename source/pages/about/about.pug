@@ -1,7 +1,110 @@
-extend ../base.pug
+extends ../base
 
 block title
-	| About Page
+	| Обо мне
 
-block main
-	h1 Обо мне
+block content
+	section.section.top
+		.top__bg
+			img(src= require("../../images/water.jpg")).top__bg-image
+
+		.top__container
+			img(src= require("../../images/title_image.png")).top__title-image
+			.top__user
+				include ../../components/user/user
+
+
+	section.section.about
+		.about__column.about__column_left
+			svg(viewbox="0 0 1000 160" preserveAspectRatio="none").about__triangle
+				polygon(points="0,0 0,160 1000,160")
+			.title.section__title обо мне
+			img(src= require('../../images/homer.jpg')).about__image
+			.title кто я
+			.paragraph Я веб разработчик из Москвы. Мне 24 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+
+		.about__column.about__column_right
+			svg(viewbox="0 0 1000 160" preserveAspectRatio="none").about__triangle
+				polygon(points="0,160 1000,0 1000,160")
+			.title чем я могу быть вам полезен
+			.paragraph Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать задачи на backend. Но давайте по порядку.
+			.skills-group
+				.skills-group__title Frontend
+				.skill
+						svg.skill__circle
+								circle().skill__circle-under
+								circle(stroke-dashoffset="50").skill__circle-above
+								text(x="50%" y="50%" dy=".3em").skill__text HTML5
+				.skill
+						svg.skill__circle
+								circle().skill__circle-under
+								circle(stroke-dashoffset="60").skill__circle-above
+								text(x="50%" y="50%" dy=".3em").skill__text CSS3
+				.skill
+						svg.skill__circle
+								circle().skill__circle-under
+								circle(stroke-dashoffset="80").skill__circle-above
+								text(x="50%" y="50%" dy=".3em").skill__text JQuery
+			.skills-group
+				.skills-group__title Backend
+				.skill
+					svg.skill__circle
+						circle().skill__circle-under
+						circle(stroke-dashoffset="30").skill__circle-above
+						text(x="50%" y="50%" dy=".3em").skill__text PHP
+				.skill
+					svg.skill__circle
+						circle().skill__circle-under
+						circle(stroke-dashoffset="50").skill__circle-above
+						text(x="50%" y="50%" dy=".3em").skill__text MySql
+				.skill
+					svg.skill__circle
+						circle().skill__circle-under
+						circle(stroke-dashoffset="120").skill__circle-above
+						text(x="50%" y="50%" dy=".3em").skill__text Node.js
+				.skill
+					svg.skill__circle
+						circle().skill__circle-under
+						circle(stroke-dashoffset="240").skill__circle-above
+						text(x="50%" y="50%" dy=".3em").skill__text Mongo db
+			.skills-group
+				.skills-group__title Workflow
+				.skill
+					svg.skill__circle
+						circle().skill__circle-under
+						circle(stroke-dashoffset="60").skill__circle-above
+						text(x="50%" y="50%" dy=".3em").skill__text git
+				.skill
+					svg.skill__circle
+						circle().skill__circle-under
+						circle(stroke-dashoffset="160").skill__circle-above
+						text(x="50%" y="50%" dy=".3em").skill__text WebPack
+	section.section
+		.map
+			img(src=require('../../images/map.png')).map__image
+		.contacts
+			.contacts__title.title Контакты
+			.contact
+				.contact__image
+				.contact__title skype
+			.contact
+				.contact__image
+				.contact__title email
+			.contact
+				.contact__image
+				.contact__title phone
+			.contact
+				.contact__image
+				.contact__title address
+			.contacts__bg
+	footer.footer
+		.footer__column
+			.text
+		.footer__column
+			.menu
+			.social
+		.footer__column
+			.quote
+				.quote__text
+				.quote__author
+	.copyright

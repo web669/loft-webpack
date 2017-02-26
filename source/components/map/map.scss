@@ -1,0 +1,14 @@
+@import "../../components/mixins";
+
+.map {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  &__image{
+	position: absolute;
+	display:block;
+	width: 100%;
+	@include centered();
+
+  }
+}

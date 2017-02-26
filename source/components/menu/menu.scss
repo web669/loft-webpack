@@ -1,7 +1,9 @@
-ul {
-  background: url('./menu.png') no-repeat;
-  padding-left: 64px;
-  li {
+.menu {
+  position: absolute;
+  display: inline-block;
+  background: #ffffff;
+  z-index: 1;
+  .menu__item {
 	display: inline-block;
   }
 }

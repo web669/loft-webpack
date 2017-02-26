@@ -1,0 +1,23 @@
+.title {
+  display: block;
+  margin: 0 auto 25px;
+  width: 350px;
+  text-align: center;
+  font-size: 33px;
+  color: #373e42;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:after {
+	content: '';
+	display: block;
+	margin: 10px auto 0;
+	width: 100px;
+	height: 3px;
+	background: #373e42;
+  }
+
+}

@@ -3,10 +3,17 @@ extend ../base.pug
 block title
 	| Index Page
 
-block main
-		h1 Главная страница
-
-		img.error
-		img.locked
-		img.unlocked
-		img(src = require("../../icons/cat.jpg") width="64")
+block content
+	section.section
+		.main
+			.main__bg
+				img(src= require("../../images/water.jpg")).main__bg-image
+			.main__window
+				.main__user
+					include ../../components/user/user
+				.main__socials
+					include ../../components/socials/socials
+				.main__buttons
+					a(href='/portfolio.html').main__button Мои работы
+					a(href='/about.html').main__button Обо мне
+					a(href='/blog.html').main__button Блог

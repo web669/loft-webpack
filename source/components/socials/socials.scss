@@ -1,0 +1,10 @@
+.socials {
+  &__item {
+    width: 40px;
+    display: inline-block;
+    margin-right: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
