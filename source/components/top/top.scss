@@ -9,6 +9,7 @@
 	@include centered(x);
 	&-image {
 	  @include centered();
+	  transform: translate(-50%, -35%);
 	}
   }
 
@@ -18,6 +19,10 @@
   }
 
   &__title-image {
+	@include centered();
+  }
+
+  &__user {
 	@include centered();
   }
 }

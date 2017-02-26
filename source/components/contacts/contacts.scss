@@ -1,6 +1,7 @@
 @import "../../components/mixins";
 .contacts {
-  width: 400px;
+  width: 380px;
+
   @include centered();
   &__title {
 	margin-top: 20px;
@@ -11,8 +12,8 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: #eaeaea;
-	opacity: 0.6;
+	background: #f4f5f0;
+	opacity: 0.9;
 	z-index: -1;
   }
 }

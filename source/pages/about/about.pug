@@ -10,12 +10,9 @@ block content
 
 		.top__container
 			img(src= require("../../images/title_image.png")).top__title-image
+			.top__user
+				include ../../components/user/user
 
-			.user
-				.user__image-container
-					img(src= require('../../images/homer.jpg')).user__image
-				.user__name Клочков Александр
-				.user__description Личный сайт веб-разработчика
 
 	section.section.about
 		.about__column.about__column_left

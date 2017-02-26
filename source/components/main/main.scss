@@ -1,0 +1,45 @@
+@import "../../components/mixins";
+.main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  &__bg {
+	&-image {
+	  @include centered();
+	}
+  }
+  &__window {
+	width: 380px;
+	background-color: rgba(30,40,30,0.5);
+	z-index: 1;
+	padding-top: 40px;
+	@include centered();
+  }
+  &__user {
+	text-align: center;
+	margin-bottom: 40px;
+  }
+  &__socials {
+	text-align: center;
+	margin-bottom: 40px;
+  }
+  &__buttons {
+	display: flex;
+  }
+  &__button {
+	flex: 1;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #628f55;
+	color: #ffffff;
+	&:hover {
+	  background: #498039;
+	}
+  }
+}

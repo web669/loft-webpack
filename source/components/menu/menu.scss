@@ -1,14 +1,9 @@
-//.menu {
-//  display: inline-block;
-//  background: #ffffff;
-//  .menu__item {
-//	display: block;
-//  }
-//}
-//.menu:after {
-//	 content: '';
-//	 display: inline-block;
-//	 width: 64px;
-//	 height: 64px;
-//	 background: url(menu.png) 0 0 no-repeat;
-//   }
+.menu {
+  position: absolute;
+  display: inline-block;
+  background: #ffffff;
+  z-index: 1;
+  .menu__item {
+	display: inline-block;
+  }
+}

@@ -1,12 +1,10 @@
 //@import "../../components/mixins";
 .about {
   @extend %clearfix;
-
+  display: flex;
   &__column {
-	float: left;
-	width: 50%;
+	flex: 1;
 	position: relative;
-	height: 100%;
 	&_left {
 	  background: $olive;
 	  .about__triangle {

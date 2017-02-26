@@ -1,10 +1,10 @@
 @import "../../components/mixins";
 
 .user {
-  @include centered();
   width: 320px;
   text-align: center;
   color: #ffffff;
+  margin: 0 auto;
   &__image {
 	border: 1px solid #000000;
 	width: 128px;

@@ -12,11 +12,18 @@ module.exports = function (pathSource, pathBuild) {
 					'sass'
 				]
 			}, {
-				test: /\.(png|jpg|svg)$/,
+				test: /\.(png|jpg)$/,
 				include: pathSource,
 				loader: 'file-loader',
 				options: {
 					name: 'images/[name]_[hash].[ext]'
+				}
+			}, {
+				test: /\.svg/,
+				include: pathSource,
+				loader: 'file-loader',
+				options: {
+					name: 'images/[name].[ext]'
 				}
 			}]
 		},
